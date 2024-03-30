@@ -14,7 +14,7 @@ if remita is not None:
     df.shape
 
 # Read the Excel file into a Pandas DataFrame
-new = pd.read_excel('Book6.xlsx')
+new = df.drop(df.index)
 
 new.head()
 
