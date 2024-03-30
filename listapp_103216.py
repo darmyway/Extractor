@@ -22,4 +22,4 @@ if remita is not None:
     p_xtractor.dropna(inplace = True)
     p_xtractor.drop_duplicates(inplace = True)
     p_xtractor  = p_xtractor.reset_index(drop = True)
-    p_xtractor.head()
+    st.write(p_xtractor)
