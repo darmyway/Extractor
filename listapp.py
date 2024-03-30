@@ -10,9 +10,8 @@ if remita is not None:
         df = pd.read_csv(remita)
     elif remita.name.endswith('.xlsx'):
         df = pd.read_excel(remita, engine='openpyxl')
-    
-st.write(df)
-df.shape
+    st.write(df)
+    df.shape
 
 
 import openpyxl
