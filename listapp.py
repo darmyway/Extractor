@@ -13,18 +13,15 @@ if remita is not None:
     st.write(df)
     df.shape
 
-# Read the Excel file into a Pandas DataFrame
-new = df.drop(df.index)
+extractor= ["Unnamed: 4", "Unnamed: 5", "Unnamed: 10"]
+name_extractor = ["Staff Number", "Staff Name", "Amount"]
 
-new.head()
+p_extract = remita[extractor]
+p_extract.columns = name_extractor
 
-new["Staff_Number"] = df["Unnamed: 4"]
-new["Name"] = df["Unnamed: 5"]
-new["Amount"] = df["Unnamed: 10"]
-new.dropna(inplace = True)
-new.drop_duplicates(inplace = True)
-extracted_payment = new.reset_index(drop = True)
+p_extract.dropna(inplace = True)
+p_extract.drop_duplicates(inplace = True)
+p_extract = p_extract.reset_index(drop = True)
 
-st.write(extracted_payment)
-extracted_payment.shape
-
+p_extract.shape
+p_extract.head()
