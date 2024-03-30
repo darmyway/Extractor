@@ -10,7 +10,6 @@ if remita is not None:
     elif remita.name.endswith('.xlsx'):
         df = pd.read_excel(remita, engine='openpyxl')
         
-    st.write(df)
     df_shape = df.shape  # Store the shape of df for later use
     
     # Extract specific columns from df
