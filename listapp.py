@@ -13,9 +13,6 @@ if remita is not None:
     st.write(df)
     df.shape
 
-
-import openpyxl
-
 # Read the Excel file into a Pandas DataFrame
 new = pd.read_excel('Book6.xlsx')
 
