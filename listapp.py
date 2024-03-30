@@ -16,11 +16,6 @@ if remita is not None:
 
 import openpyxl
 
-# Create an empty Excel file using openpyxl
-workbook = openpyxl.Workbook()
-workbook.save('Book6.xlsx')
-workbook.close()
-
 # Read the Excel file into a Pandas DataFrame
 new = pd.read_excel('Book6.xlsx')
 
