@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import base64
 
-st.write("This Web Application is developed Using Python @ Dammyway")
+st.write("This Web Application is developed just for extracting remita files only. If remita designs remains the same, it will always work fine")
 remita = st.file_uploader("Kindly upload your csv or excel file here", type=["xlsx", "csv"])
 if remita is not None:
     # Determine file type and read data into DataFrame
@@ -24,3 +24,5 @@ if remita is not None:
     p_xtractor.drop_duplicates(inplace = True)
     p_xtractor  = p_xtractor.reset_index(drop = True)
     st.write(p_xtractor)
+    st.write("Hover on the table above and click the download logo at the right top conner to download your extracted file")
+    st.write("All right reserved © 2024 Dammyway")
