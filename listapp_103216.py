@@ -15,7 +15,7 @@ if remita is not None:
     df_shape = df.shape  # Store the shape of df for later use
     
     # Extract specific columns from df
-    extractor = ["Unnamed: 2", "Unnamed: 3", "Unnamed: 7"]
+    extractor = ["Unnamed: 4", "Unnamed: 5", "Unnamed: 10"]
     name_extractor = ["Staff Number", "Staff Name", "Amount"]
     p_xtractor = df[extractor]
     p_xtractor.columns = name_extractor
